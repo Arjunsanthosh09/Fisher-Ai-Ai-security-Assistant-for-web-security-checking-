@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield background -->
+  <path d="M64 8L16 24v32c0 35.2 20.8 68.2 48 81.6 27.2-13.4 48-46.4 48-81.6V24L64 8z" fill="#2196F3"/>
+  
+  <!-- Shield border -->
+  <path d="M64 8L16 24v32c0 35.2 20.8 68.2 48 81.6 27.2-13.4 48-46.4 48-81.6V24L64 8z" fill="none" stroke="#1976D2" stroke-width="4"/>
+  
+  <!-- Checkmark -->
+  <path d="M48 64L56 72L80 48" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg> 

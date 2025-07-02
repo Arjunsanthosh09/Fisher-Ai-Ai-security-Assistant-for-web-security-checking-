@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Security Assistant</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'; object-src 'self'">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>AI Security Assistant</h1>
+      <div class="voice-control">
+        <button id="voiceButton" class="voice-button">
+          <span class="mic-icon">🎤</span>
+          <span class="button-text">Start Voice Control</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="current-site">
+      <h2>Current Website</h2>
+      <div id="currentUrl" class="url-display">Loading...</div>
+      <div id="securityStatus" class="status">
+        <div class="status-icon">🔍</div>
+        <div class="status-text">Analyzing...</div>
+      </div>
+    </div>
+
+    <div class="analysis-results">
+      <div class="result-item">
+        <span class="label">SSL Status:</span>
+        <span id="sslStatus" class="value">Checking...</span>
+      </div>
+      <div class="result-item">
+        <span class="label">Domain Reputation:</span>
+        <span id="domainReputation" class="value">Checking...</span>
+      </div>
+      <div class="result-item">
+        <span class="label">Risk Score:</span>
+        <span id="riskScore" class="value">Calculating...</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="analyzeButton" class="primary-button">Analyze Current Page</button>
+      <button id="pasteUrlButton" class="secondary-button">Paste URL to Check</button>
+    </div>
+
+    <div id="urlInputContainer" class="url-input-container hidden">
+      <input type="text" id="urlInput" placeholder="Paste URL here...">
+      <button id="checkUrlButton" class="primary-button">Check URL</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
